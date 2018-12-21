@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.android.curso.animacionesobjetos.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <com.rany.albeg.wein.springfabmenu.SpringFabMenu
+        android:id="@+id/sfm_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchorGravity="bottom|right"
+        app:layout_behavior="@string/appbar_springfabmenu_behavior"
+        app:sfm_delay_expanding_menu_items="500"
+        app:sfm_expand_duration="4000"
+        app:sfm_expand_item_rotation_degrees="360"
+        app:sfm_expand_menu_button_rotation_degrees="360"
+        app:sfm_menu_button_color="#1f6e09"
+        app:sfm_menu_button_ripple_color="#E8EDDF"
+        app:sfm_src_icon="@drawable/ic_share">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_Twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#006992"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_twitter"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_Facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#006992"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_facebook"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_Google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#006992"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_google"/>
+
+    </com.rany.albeg.wein.springfabmenu.SpringFabMenu>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/texto"
+   />
+
+    <xyz.hanks.library.bang.SmallBangView
+        android:id="@+id/like_heart"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="56dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/corazon"
+            />
+    </xyz.hanks.library.bang.SmallBangView>
+
+</android.support.constraint.ConstraintLayout>

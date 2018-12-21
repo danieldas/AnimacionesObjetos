@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.android.curso.animacionesobjetos.MainActivity">
+    <item
+        android:id="@+id/item_alpha"
+        android:orderInCategory="100"
+        android:title="alpha"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item_rotate"
+        android:orderInCategory="100"
+        android:title="rotate"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item_scale"
+        android:orderInCategory="100"
+        android:title="scale"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item_translate"
+        android:orderInCategory="100"
+        android:title="translate"
+        app:showAsAction="never" />
+</menu>
